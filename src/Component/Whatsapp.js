@@ -9,6 +9,7 @@ const Whatsapp = () => {
     <a
       href={url}
       target={"_blank"}
+      rel="noreferrer"
       className=" btn-circle fixed top-[92%] right-8"
     >
       <FaWhatsapp fill="green" size={35} />
