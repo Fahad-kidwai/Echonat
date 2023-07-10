@@ -33,7 +33,7 @@ const ITconsulting = () => {
           <figure>
             <img
               className=" w-[19rem] h-full"
-              src="https://unsplash.com/photos/hpjSkU2UYSU"
+              src="https://res.cloudinary.com/dydwvfozy/image/upload/v1687113653/charlesdeluvio-Lks7vei-eAg-unsplash_t8uus2.jpg"
               alt="IT"
             />
           </figure>
