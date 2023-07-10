@@ -8,9 +8,9 @@ const Navbar = () => {
       <header className="absolute top-0 left-0 w-full z-50 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-56 p-5">
         <div className="flex flex-wrap items-center justify-between py-2">
           <div className="w-1/2 md:w-auto">
-            <a href="index.html" className="text-white font-bold text-4xl">
+            <Link to="/" className="text-white font-bold text-4xl">
               Echonat
-            </a>
+            </Link>
             <p className=" -mt-1 text-gray-200 font-semibold text-sm">
               Empowering Digital Solutons
             </p>

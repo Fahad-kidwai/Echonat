@@ -16,17 +16,17 @@ const Footer = () => {
           </h5>
           <ul class="mt-4">
             <li class="mt-2">
-              <a href="#" title="" class="opacity-75 hover:opacity-100">
+              <a href="/" title="" class="opacity-75 hover:opacity-100">
                 Fast and Efficient
               </a>
             </li>
             <li class="mt-2">
-              <a href="#" title="" class="opacity-75 hover:opacity-100">
+              <a href="/" title="" class="opacity-75 hover:opacity-100">
                 24x7 Availability
               </a>
             </li>
             <li class="mt-2">
-              <a href="#" title="" class="opacity-75 hover:opacity-100">
+              <a href="/" title="" class="opacity-75 hover:opacity-100">
                 Communication
               </a>
             </li>
@@ -40,6 +40,7 @@ const Footer = () => {
           <ul class="mt-4">
             <li>
               <iframe
+                title="map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463877.3124257801!2d46.49288533991112!3d24.72545537344616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sin!4v1687863792365!5m2!1sen!2sin"
                 allowfullscreen=""
                 loading="lazy"
@@ -48,9 +49,9 @@ const Footer = () => {
             </li>
             <li class="mt-4">
               <a
-                href="#"
+                href="/"
                 title=""
-                class="block flex items-center opacity-75 hover:opacity-100"
+                className="flex items-center opacity-75 hover:opacity-100"
               >
                 <span>
                   <svg
@@ -73,9 +74,9 @@ const Footer = () => {
             </li>
             <li class="mt-4">
               <a
-                href="#"
+                href="/"
                 title=""
-                class="block flex items-center opacity-75 hover:opacity-100"
+                class="flex items-center opacity-75 hover:opacity-100"
               >
                 <span>
                   <svg
@@ -93,9 +94,9 @@ const Footer = () => {
             </li>
             <li class="mt-4">
               <a
-                href="#"
+                href="/"
                 title=""
-                class="block flex items-center opacity-75 hover:opacity-100"
+                className="flex items-center opacity-75 hover:opacity-100"
               >
                 <span>
                   <svg
@@ -120,13 +121,13 @@ const Footer = () => {
           </h5>
           <ul class="mt-4 flex">
             <li class="ml-6">
-              <a href="https://in.linkedin.com/" target="_blank" title="">
+              <a href="https://in.linkedin.com/" title="">
                 <FaLinkedin size={30} />
               </a>
             </li>
 
             <li class="ml-6">
-              <a href="https://twitter.com/login" target="_blank" title="">
+              <a href="https://twitter.com/login" title="">
                 <FaTwitter size={30} />
               </a>
             </li>
