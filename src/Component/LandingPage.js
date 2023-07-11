@@ -24,6 +24,7 @@ import SwiperCore, {
 import { Swiper, SwiperSlide } from "swiper/react";
 // import "animate.css";
 import "swiper/swiper-bundle.css";
+import { Link } from "react-router-dom";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const LandingPage = () => {
@@ -49,7 +50,7 @@ const LandingPage = () => {
                 </p>
               </div>
             </div>
-            <div className=" lg:w-7/12 xl:w-[49%] sm:w-full relative z-10 max-h-60 animate__animated animate__fadeInDown animate__slower">
+            <div className=" lg:w-7/12 xl:w-[49%] sm:w-5/6 relative z-10 p-2 max-h-60 animate__animated animate__fadeInDown animate__slower">
               <Swiper
                 className=" rounded-xl"
                 slidesPerView={1}
@@ -59,27 +60,37 @@ const LandingPage = () => {
                 <SwiperSlide key={1}>
                   <div
                     style={{
-                      background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1687286151/WhatsApp_Image_2023-06-19_at_12.46.31_ktzlhk.jpg") center no-repeat`,
+                      background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1689072694/1_r2ob3p.png") center no-repeat`,
+                      backgroundSize: "cover",
                     }}
-                    className="swiperSlideDiv h-[60vh]"
+                    className="swiperSlideDiv md:h-[54vh] 2xl:h-[45]"
                   ></div>
                 </SwiperSlide>
                 <SwiperSlide key={2}>
                   <div
                     style={{
-                      background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1687286151/WhatsApp_Image_2023-06-19_at_15.54.47_1_gshuzu.jpg") center no-repeat`,
+                      background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1689072694/2_dyf9vg.png") center no-repeat`,
                       backgroundSize: "cover",
                     }}
-                    className="swiperSlideDiv h-[60vh]"
+                    className="swiperSlideDiv md:h-[54vh] xl:h-[45]"
                   ></div>
                 </SwiperSlide>
                 <SwiperSlide key={3}>
                   <div
                     style={{
-                      background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1687286150/WhatsApp_Image_2023-06-19_at_15.54.47_nw4rhj.jpg") center no-repeat`,
+                      background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1689072694/3_y66qo4.png") center no-repeat`,
                       backgroundSize: "cover",
                     }}
-                    className="swiperSlideDiv h-[60vh]"
+                    className="swiperSlideDiv md:h-[54vh] xl:h-[45]"
+                  ></div>
+                </SwiperSlide>
+                <SwiperSlide key={4}>
+                  <div
+                    style={{
+                      background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1689072694/4_kjetyw.png") center no-repeat`,
+                      backgroundSize: "cover",
+                    }}
+                    className="swiperSlideDiv md:h-[54vh] xl:h-[45]"
                   ></div>
                 </SwiperSlide>
               </Swiper>
@@ -102,177 +113,225 @@ const LandingPage = () => {
         </div>
 
         <div className="md:flex md:flex-wrap mt-16 gap-8 md:-mx-4">
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <FaCookie size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">IT Consulting Services</h2>
-              <ul className=" list-disc">
-                <li>Strategic IT planning and consulting</li>
-                <li>Technology assessment and roadmap development</li>
-                <li>Business process optimization and automation</li>
-                <li>IT infrastructure design and implementation</li>
-              </ul>
-              {/* <div className="card-actions justify-end">
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/consulting"
+          >
+            <div>
+              <figure className=" mt-5">
+                <FaCookie size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">
+                  IT Consulting Services
+                </h2>
+                <ul className=" list-disc">
+                  <li>Strategic IT planning and consulting</li>
+                  <li>Technology assessment and roadmap development</li>
+                  <li>Business process optimization and automation</li>
+                  <li>IT infrastructure design and implementation</li>
+                </ul>
+                {/* <div className="card-actions justify-end">
                 <button className="btn btn-sm">Learn now!</button>
               </div> */}
+              </div>
             </div>
-          </div>
+          </Link>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/manage"
+          >
+            <div>
+              <figure className=" mt-5">
+                <GrUserManager size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">Manage IT Services</h2>
+                <ul className=" list-disc">
+                  <li>Proactive network and server monitoring</li>
+                  <li>Help desk and technical support</li>
+                  <li>Patch management and software updates</li>
+                  <li>Data backup and disaster recovery solutions</li>
+                  <li>Security management and threat detection</li>
+                </ul>
+              </div>
+            </div>
+          </Link>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/cloud"
+          >
+            <div>
+              <figure className=" mt-5">
+                <FaCloudUploadAlt size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">Cloud Services</h2>
+                <ul className=" list-disc">
+                  <li>Cloud migration and deployment</li>
+                  <li>Infrastructure as a Service (IaaS)</li>
+                  <li>Software as a Service (SaaS)</li>
+                  <li>Platform as a Service (PaaS)</li>
+                  <li>Cloud security and compliance</li>
+                </ul>
+              </div>
+            </div>
+          </Link>
 
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <GrUserManager size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">Manage IT Services</h2>
-              <ul className=" list-disc">
-                <li>Proactive network and server monitoring</li>
-                <li>Help desk and technical support</li>
-                <li>Patch management and software updates</li>
-                <li>Data backup and disaster recovery solutions</li>
-                <li>Security management and threat detection</li>
-              </ul>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/network"
+          >
+            <div>
+              <figure className=" mt-5">
+                <FaNetworkWired size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">
+                  Network And Security Services
+                </h2>
+                <ul className=" list-disc">
+                  <li>Network design and implementation</li>
+                  <li>Firewall setup and configuration</li>
+                  <li>Intrusion detection and prevention systems</li>
+                  <li>Virtual private network (VPN) setup</li>
+                  <li>Vulnerability assessment and penetration testing</li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/dataManage"
+          >
+            <div>
+              <figure className=" mt-5">
+                <FaDatabase size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">
+                  Data Management Services
+                </h2>
+                <ul className=" list-disc">
+                  <li> Data storage and backup solutions</li>
+                  <li>Database administration and optimization</li>
+                  <li>Data warehousing and analytics</li>
+                  <li> Data migration and integration</li>
+                  <li> Data governance and compliance</li>
+                </ul>
+              </div>
+            </div>
+          </Link>
 
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <FaCloudUploadAlt size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">Cloud Services</h2>
-              <ul className=" list-disc">
-                <li>Cloud migration and deployment</li>
-                <li>Infrastructure as a Service (IaaS)</li>
-                <li>Software as a Service (SaaS)</li>
-                <li>Platform as a Service (PaaS)</li>
-                <li>Cloud security and compliance</li>
-              </ul>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/software"
+          >
+            <div>
+              <figure className=" mt-5">
+                <GrCloudSoftware size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">
+                  Software Development and Integration
+                </h2>
+                <ul className=" list-disc">
+                  <li>Custom software development</li>
+                  <li> Web and mobile application development</li>
+                  <li>Integration of third-party systems and APIs</li>
+                  <li>Legacy system modernization</li>
+                  <li> Quality assurance and testing</li>
+                </ul>
+              </div>
             </div>
-          </div>
+          </Link>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/itProject"
+          >
+            <div>
+              <figure className=" mt-5">
+                <GrBusinessService size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">
+                  IT Project Management
+                </h2>
+                <ul className=" list-disc">
+                  <li>Project scoping and planning</li>
+                  <li>Resource allocation and management</li>
+                  <li> Budgeting and cost control</li>
+                  <li>Risk assessment and mitigation</li>
+                  <li>Project documentation and reporting</li>
+                </ul>
+              </div>
+            </div>
+          </Link>
 
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <FaNetworkWired size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">
-                Network And Security Services
-              </h2>
-              <ul className=" list-disc">
-                <li>Network design and implementation</li>
-                <li>Firewall setup and configuration</li>
-                <li>Intrusion detection and prevention systems</li>
-                <li>Virtual private network (VPN) setup</li>
-                <li>Vulnerability assessment and penetration testing</li>
-              </ul>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/virtualization"
+          >
+            <div>
+              <figure className=" mt-5">
+                <GrVirtualMachine size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">
+                  Virtualization and Infrastructure Services
+                </h2>
+                <ul className=" list-disc">
+                  <li> Server virtualization and consolidation</li>
+                  <li>Virtual desktop infrastructure (VDI)</li>
+                  <li> Storage virtualization</li>
+                  <li>Cloud infrastructure management</li>
+                  <li>High availability and fault tolerance solutions</li>
+                </ul>
+              </div>
             </div>
-          </div>
-
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <FaDatabase size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">
-                Data Management Services
-              </h2>
-              <ul className=" list-disc">
-                <li> Data storage and backup solutions</li>
-                <li>Database administration and optimization</li>
-                <li>Data warehousing and analytics</li>
-                <li> Data migration and integration</li>
-                <li> Data governance and compliance</li>
-              </ul>
+          </Link>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/itTraining"
+          >
+            <div>
+              <figure className=" mt-5">
+                <GrSupport size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">
+                  IT Training and Support
+                </h2>
+                <ul className=" list-disc">
+                  <li> End-user training and support</li>
+                  <li> Technology adoption and change management</li>
+                  <li>Training programs for IT staff</li>
+                  <li>Knowledge base and self-help resources</li>
+                  <li>User documentation and manuals</li>
+                </ul>
+              </div>
             </div>
-          </div>
-
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <GrCloudSoftware size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">
-                Software Development and Integration
-              </h2>
-              <ul className=" list-disc">
-                <li>Custom software development</li>
-                <li> Web and mobile application development</li>
-                <li>Integration of third-party systems and APIs</li>
-                <li>Legacy system modernization</li>
-                <li> Quality assurance and testing</li>
-              </ul>
+          </Link>
+          <Link
+            className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
+            to="/itSecurity"
+          >
+            <div>
+              <figure className=" mt-5">
+                <GrShieldSecurity size={40} />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-center">IT Security Services</h2>
+                <ul className=" list-disc">
+                  <li>Security assessment and audits</li>
+                  <li>Security policy development</li>
+                  <li>Security awareness training</li>
+                  <li>Incident response and management</li>
+                  <li>Security architecture design and implementation</li>
+                </ul>
+              </div>
             </div>
-          </div>
-
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <GrBusinessService size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">IT Project Management</h2>
-              <ul className=" list-disc">
-                <li>Project scoping and planning</li>
-                <li>Resource allocation and management</li>
-                <li> Budgeting and cost control</li>
-                <li>Risk assessment and mitigation</li>
-                <li>Project documentation and reporting</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <GrVirtualMachine size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">
-                Virtualization and Infrastructure Services
-              </h2>
-              <ul className=" list-disc">
-                <li> Server virtualization and consolidation</li>
-                <li>Virtual desktop infrastructure (VDI)</li>
-                <li> Storage virtualization</li>
-                <li>Cloud infrastructure management</li>
-                <li>High availability and fault tolerance solutions</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <GrSupport size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">
-                IT Training and Support
-              </h2>
-              <ul className=" list-disc">
-                <li> End-user training and support</li>
-                <li> Technology adoption and change management</li>
-                <li>Training programs for IT staff</li>
-                <li>Knowledge base and self-help resources</li>
-                <li>User documentation and manuals</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200">
-            <figure className=" mt-5">
-              <GrShieldSecurity size={40} />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-center">IT Security Services</h2>
-              <ul className=" list-disc">
-                <li>Security assessment and audits</li>
-                <li>Security policy development</li>
-                <li>Security awareness training</li>
-                <li>Incident response and management</li>
-                <li>Security architecture design and implementation</li>
-              </ul>
-            </div>
-          </div>
+          </Link>
         </div>
       </section>
     </Fragment>
