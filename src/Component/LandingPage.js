@@ -85,15 +85,20 @@ const LandingPage = () => {
                   ></div>
                 </SwiperSlide>
                 <SwiperSlide key={4}>
-                  <div
-                    style={{
-                      background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1689072694/4_kjetyw.png") center no-repeat`,
-                      backgroundSize: "cover",
-                    }}
-                    className="swiperSlideDiv md:h-[54vh] xl:h-[45]"
-                  ></div>
+                  <label htmlFor="my-modal-1">
+                    <div
+                      style={{
+                        background: `url("https://res.cloudinary.com/dydwvfozy/image/upload/v1689072694/4_kjetyw.png") center no-repeat`,
+                        backgroundSize: "cover",
+                      }}
+                      className="swiperSlideDiv md:h-[54vh] xl:h-[45] cursor-pointer"
+                    ></div>
+                  </label>
                 </SwiperSlide>
               </Swiper>
+              <h1 className=" to-blue-800 font-bold font-serif text-3xl mt-5 text-center">
+                Our Current Offerings
+              </h1>
             </div>
           </div>
         </section>
@@ -139,7 +144,7 @@ const LandingPage = () => {
           </Link>
           <Link
             className="card mb-8 w-80 bg-gradient-to-b from-cyan-300 to-blue-200"
-            to="/manage"
+            to="/managed"
           >
             <div>
               <figure className=" mt-5">

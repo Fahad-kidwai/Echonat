@@ -14,6 +14,8 @@ import SoftwareDev from "./Component/SoftwareDev";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Whatsapp from "./Component/Whatsapp";
 import About from "./Component/About";
+import Career from "./Component/Career";
+import Partners from "./Component/Partners";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route path="/itTraining" element={<ITTraining />} />
           <Route path="/itSecurity" element={<ITSecurity />} />
           <Route path="/about" element={<About />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/partners" element={<Partners />} />
         </Routes>
         <Footer />
         <Whatsapp />

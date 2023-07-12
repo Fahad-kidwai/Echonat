@@ -103,7 +103,7 @@ const Navbar = () => {
                 <li className="md:ml-4">
                   <Link
                     className="py-2 inline-block md:text-white md:px-2 font-semibold"
-                    to="/"
+                    to="/partners"
                   >
                     Our Partners
                   </Link>
@@ -111,7 +111,7 @@ const Navbar = () => {
                 <li className="md:ml-4 md:hidden lg:block">
                   <Link
                     className="py-2 inline-block md:text-white md:px-2 font-semibold"
-                    to="/"
+                    to="/career"
                   >
                     Career
                   </Link>
