@@ -1,27 +1,17 @@
-import React, { Fragment, useRef, useState } from "react";
+import React, { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 const ConnectModal = () => {
   const form = useRef();
-  const [formdata, setFormData] = useState({
-    name: "",
-    email: "",
-    service: "",
-  });
-
- 
-
-  // const handleChange = (e) => {
-  //   setFormData((prevState) => ({
-  //     ...prevState,
-  //     [e.target.id]: e.target.value,
-  //   }));
-  // };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log(formdata);
-    emailjs.sendForm('service_tbn71et','template_044yh66',form.current,'VXcDgJGBEpg1f9kj3')
+    emailjs.sendForm(
+      "service_tbn71et",
+      "template_044yh66",
+      form.current,
+      "VXcDgJGBEpg1f9kj3"
+    );
 
     document.getElementById("my-modal-1").checked = false;
   };
@@ -38,7 +28,7 @@ const ConnectModal = () => {
             x
           </label>
           <form ref={form} className="mt-6" onSubmit={handleFormSubmit}>
-          <div className="mb-2">
+            <div className="mb-2">
               <label
                 htmlFor="name"
                 className="block text-sm font-semibold text-gray-800"

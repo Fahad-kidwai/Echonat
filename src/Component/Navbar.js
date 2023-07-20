@@ -91,11 +91,7 @@ const Navbar = () => {
                       <li>
                         <Link>Our Freelancing Offerings</Link>
 
-                        {/* <ul>
-                          <li>
-                            <a>IT Consulting Service</a>
-                          </li>
-                        </ul> */}
+                        
                       </li>
                     </ul>
                   </div>
