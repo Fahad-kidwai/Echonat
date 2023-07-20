@@ -1,6 +1,28 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const Career = () => {
+  const form = useRef();
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm(
+      "service_tbn71et",
+      "template_u0hukoa",
+      form.current,
+      "VXcDgJGBEpg1f9kj3"
+    )
+    .then((result) => {
+    console.log("passed")
+      console.log(result.text);
+  }, (error) => {
+    console.log("failed")
+      console.log(error.text);
+  });
+
+    
+  };
+
   return (
     <Fragment>
       <section className=" relative bg-gradient-to-tr from-cyan-500 to-blue-500  px-4 sm:px-8 lg:px-10 xl:px-20 2xl:px-64 overflow-hidden py-40 flex items-center h-3/5">
@@ -26,31 +48,41 @@ const Career = () => {
       </section>
 
       <section className="relative px-4 py-10 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:py-12">
-        <form className=" mx-auto my-8 p-5 border rounded-md border-blue-400 md:w-2/5 xl:w-1/3">
+        <form
+          ref={form}
+          onSubmit={handleFormSubmit}
+          className=" mx-auto my-8 p-5 border rounded-md border-blue-400 md:w-3/6 xl:w-[45%]"
+        >
           <h1 className=" text-center text-2xl text-cyan-500 pb-4">
             Professional Information
           </h1>
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            className="input input-bordered input-md w-full max-w-xs my-2"
-          />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            className="input input-bordered input-md w-full max-w-xs my-2"
-          />
-          <label for="skils">Skills</label>
-          <input
-            type="text"
-            id="skils"
-            name="skils"
-            className="input input-bordered input-md w-full max-w-xs my-2"
-          />
+          <div className="mb-2 flex flex-wrap justify-evenly items-center">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              className="input input-bordered input-md w-full max-w-xs my-2"
+            />
+          </div>
+          <div className="mb-2 flex flex-wrap justify-evenly items-center">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              className="input input-bordered input-md w-full max-w-xs my-2"
+            />
+          </div>
+          <div className="mb-2 flex flex-wrap justify-evenly items-center">
+            <label for="skills">Skills</label>
+            <input
+              type="text"
+              id="skills"
+              name="skills"
+              className="input input-bordered input-md w-full max-w-xs my-2"
+            />
+          </div>
           <button className="btn btn-block bg-cyan-500 text-white">
             Get Response
           </button>

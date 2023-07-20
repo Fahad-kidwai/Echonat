@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
-      <section className=" relative bg-gradient-to-tr from-cyan-500 to-blue-500  px-4 sm:px-8 lg:px-10 xl:px-20 2xl:px-64 overflow-hidden py-40 flex items-center min-h-screen">
+    <div className=" font-serif">
+      <section className=" relative bg-gradient-to-tr from-cyan-500 to-blue-500  px-4 sm:px-8 lg:px-10 xl:px-20 2xl:px-64 overflow-hidden pt-40 flex items-center min-h-screen">
         <div className="h-full w-full absolute top-0 left-0 z-0">
           <img
             src="https://res.cloudinary.com/dydwvfozy/image/upload/v1687113653/charlesdeluvio-Lks7vei-eAg-unsplash_t8uus2.jpg"
@@ -16,7 +16,7 @@ const About = () => {
             {/* <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
               About
             </h1> */}
-            <p class=" text-teal-100 font-serif text-xl md:text-2xl text-justify leading-snug mt-4">
+            <p class=" text-teal-100  text-xl md:text-2xl text-justify leading-snug mt-4">
               Welcome to Echonat, a leading IT solutions provider dedicated to
               empowering businesses through cutting-edge technology. With our
               team of highly skilled professionals and a passion for innovation,
@@ -26,8 +26,9 @@ const About = () => {
           </div>
         </div>
       </section>
-      <div className=" flex mx-auto sm:w-4/5 md:w-1/2 my-8 flex-col">
-        <p className=" font-semibold">
+      <div className=" bg-slate-600 p-0 m-0">
+      <div className=" flex mx-auto sm:w-4/5 md:w-1/2 py-8 flex-col text-white">
+        <p className=" font-semibold text-lg">
           At Echonat, we understand that technology is at the core of modern
           businesses. Whether you are a startup, a small business, or an
           enterprise-level organization, we offer comprehensive IT services
@@ -35,16 +36,16 @@ const About = () => {
           in various domains, we provide end-to-end solutions that optimize your
           operations, enhance efficiency, and accelerate growth.
         </p>
-        <h1 className=" text-2xl font-bold my-4">Why choose us?</h1>
+        <h1 className=" text-3xl font-bold mt-4 mb-2">Why choose us?</h1>
         <ol className=" list-decimal text-justify">
-          <li className="py-2 text-lg">
+          <li className="py-2 text-xl">
             <span className=" font-semibold ">Expertise and Experience:</span>{" "}
             Our team comprises seasoned IT professionals with a diverse range of
             skills and extensive industry experience. We stay updated with the
             latest trends and technologies, ensuring that our solutions are
             always at the forefront of innovation.
           </li>
-          <li className="py-2 text-lg">
+          <li className="py-2 text-xl">
             <span className=" font-semibold ">Customer-Centric Approach:</span>{" "}
             We believe in building long-term relationships with our clients
             based on trust and mutual success. Our customer-centric approach
@@ -56,7 +57,7 @@ const About = () => {
             create customized solutions that address your specific pain points
             and unlock your full potential. Comprehensive
           </li>
-          <li className="py-2 text-lg">
+          <li className="py-2 text-xl">
             {" "}
             <span className=" font-semibold ">Service Portfolio:</span> From IT
             consulting and infrastructure management to software development and
@@ -69,7 +70,7 @@ const About = () => {
             a competitive edge. Our track record speaks for itself, showcasing
             our commitment to excellence and the value we bring to our clients.
           </li>
-          <li className="py-2 text-lg">
+          <li className="py-2 text-xl">
             {" "}
             <span className=" font-semibold ">
               Security and Reliability:
@@ -81,7 +82,7 @@ const About = () => {
             infrastructure and 24/7 support ensure that your systems operate
             smoothly without interruptions.
           </li>
-          <li className="py-2 text-lg">
+          <li className="py-2 text-xl">
             {" "}
             <span className=" font-semibold ">Continuous Innovation:</span>{" "}
             Technology is ever-evolving, and we are committed to staying ahead
@@ -91,7 +92,7 @@ const About = () => {
           </li>
         </ol>
         <hr className=" border-1 border-gray-500 mt-2" />
-        <p className=" text-justify text-lg font-medium italic mt-4">
+        <p className=" text-justify text-xl font-medium italic mt-4">
           At Echonat, we are passionate about technology and its potential to
           transform businesses. Our mission is to empower organizations like
           yours with state-of-the-art IT solutions that drive growth, enhance
@@ -105,6 +106,7 @@ const About = () => {
           embark on a journey of innovation and achieve remarkable results in
           the digital age.
         </p>
+      </div>
       </div>
     </div>
   );

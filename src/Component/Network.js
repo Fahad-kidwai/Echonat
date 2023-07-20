@@ -55,7 +55,9 @@ const Network = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500 btn-md ">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -84,7 +86,9 @@ const Network = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -114,7 +118,9 @@ const Network = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -143,7 +149,9 @@ const Network = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -173,19 +181,13 @@ const Network = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
-        <div className="card card-side bg-base-100 shadow-xl">
-          <figure>
-            <img
-              className=" w-[19rem] h-full"
-              src="https://res.cloudinary.com/dydwvfozy/image/upload/v1687113653/charlesdeluvio-Lks7vei-eAg-unsplash_t8uus2.jpg"
-              alt="Movie"
-            />
-          </figure>
-        </div>
+
       </div>
     </div>
   );

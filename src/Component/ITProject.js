@@ -51,7 +51,9 @@ const ITProject = () => {
               <li>Define project scope, objectives, and success criteria. </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500 btn-md ">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -79,7 +81,9 @@ const ITProject = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -108,7 +112,9 @@ const ITProject = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -135,7 +141,9 @@ const ITProject = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -164,7 +172,9 @@ const ITProject = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>

@@ -1,22 +1,28 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const ConnectModal = () => {
+  const form = useRef();
   const [formdata, setFormData] = useState({
+    name: "",
     email: "",
-    phNo: "",
     service: "",
   });
 
-  const handleChange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      [e.target.id]: e.target.value,
-    }));
-  };
+ 
+
+  // const handleChange = (e) => {
+  //   setFormData((prevState) => ({
+  //     ...prevState,
+  //     [e.target.id]: e.target.value,
+  //   }));
+  // };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
     console.log(formdata);
+    emailjs.sendForm('service_tbn71et','template_044yh66',form.current,'VXcDgJGBEpg1f9kj3')
+
     document.getElementById("my-modal-1").checked = false;
   };
 
@@ -31,7 +37,22 @@ const ConnectModal = () => {
           >
             x
           </label>
-          <form className="mt-6" onSubmit={handleFormSubmit}>
+          <form ref={form} className="mt-6" onSubmit={handleFormSubmit}>
+          <div className="mb-2">
+              <label
+                htmlFor="name"
+                className="block text-sm font-semibold text-gray-800"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
+              />
+            </div>
             <div className="mb-2">
               <label
                 htmlFor="email"
@@ -43,27 +64,11 @@ const ConnectModal = () => {
                 type="email"
                 name="email"
                 id="email"
-                onChange={handleChange}
                 required
                 className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>
-            <div className="mb-2">
-              <label
-                htmlFor="phNo"
-                className="block text-sm font-semibold text-gray-800"
-              >
-                Contact No.
-              </label>
-              <input
-                type="number"
-                name="phNo"
-                id="phNo"
-                onChange={handleChange}
-                required
-                className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
-              />
-            </div>
+
             <div className="mb-2">
               <label
                 htmlFor="service"
@@ -75,7 +80,6 @@ const ConnectModal = () => {
                 type="textarea"
                 name="service"
                 id="service"
-                onChange={handleChange}
                 className="block w-full px-4 py-2 mt-2 text-cyan-700 bg-white border rounded-md focus:border-cyan-400 focus:ring-cyan-300 focus:outline-none focus:ring focus:ring-opacity-40"
               />
             </div>

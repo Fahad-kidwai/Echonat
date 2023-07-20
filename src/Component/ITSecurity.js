@@ -54,7 +54,9 @@ const ITSecurity = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500 btn-md ">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -83,7 +85,9 @@ const ITSecurity = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -112,7 +116,9 @@ const ITSecurity = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -141,7 +147,9 @@ const ITSecurity = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -170,7 +178,9 @@ const ITSecurity = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>
@@ -199,7 +209,9 @@ const ITSecurity = () => {
               </li>
             </ul>
             <div className="card-actions justify-end">
-              <button className="btn bg-cyan-500  btn-md">Avail Service</button>
+                            <button className="btn bg-cyan-500 btn-md ">
+                <label htmlFor="my-modal-1">Avail Service</label>
+              </button>
             </div>
           </div>
         </div>

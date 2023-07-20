@@ -40,7 +40,7 @@ const LandingPage = () => {
             />
           </div>
           <div className="flex flex-wrap flex-row w-full gap-8 items-center">
-            <div className=" lg:w-2/6 xl:w-[45%] sm:w-full relative z-10 h-fit animate__animated animate__fadeInDown animate__slower">
+            <div className=" lg:w-2/6 xl:w-[40%] 2xl:w-2/6 sm:w-full relative z-10 h-fit animate__animated animate__fadeInDown animate__slower">
               <div>
                 <h1 className="text-white text-4xl md:text-5xl xl:text-6xl font-bold leading-tight">
                   The Tech you need is what we expertise
@@ -50,7 +50,7 @@ const LandingPage = () => {
                 </p>
               </div>
             </div>
-            <div className=" lg:w-7/12 xl:w-[49%] sm:w-5/6 relative z-10 p-2 max-h-60 animate__animated animate__fadeInDown animate__slower">
+            <div className=" lg:w-3/5 xl:w-[55%] 2xl:w-3/5  sm:w-5/6 relative z-10 p-2 max-h-60 animate__animated animate__fadeInDown animate__slower">
               <Swiper
                 className=" rounded-xl"
                 slidesPerView={1}
